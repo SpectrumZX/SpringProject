@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+
+        <File>c:/logs/core.log</File>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d [%thread] %level %logger - %m%n</Pattern>
+        </layout>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- CONSOLE -->
+
+<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+        <Pattern>%d [%thread] %highlight(%level) %logger - %m%n</Pattern>
+    </layout>
+</appender>
+<root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+</root>
+
+
+</configuration>

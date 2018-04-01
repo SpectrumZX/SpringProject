@@ -1,0 +1,15 @@
+com\platform\TokenHandler.class
+com\platform\db\HibernateUtil.class
+com\platform\db\entity\AccessLevel.class
+com\platform\controller\UserController.class
+com\platform\db\entity\PostEntity.class
+com\platform\TokenAuthentication.class
+com\platform\db\entity\Start.class
+com\platform\Start.class
+com\platform\db\dao\UserDAO.class
+com\platform\db\TransactionalManager.class
+com\platform\HTTPLoggerInterceptor.class
+com\platform\controller\LoginController.class
+com\platform\controller\PostController.class
+com\platform\db\dao\PostDAO.class
+com\platform\db\entity\UserEntity.class
