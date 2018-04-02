@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37775e50-f993-4c95-81b1-9bc1fcd0b793" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="37775e50-f993-4c95-81b1-9bc1fcd0b793" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +63,8 @@
       <file leaf-file-name="Start.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/platform/db/entity/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="374">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -720,7 +717,7 @@
       <workItem from="1522075295872" duration="9000" />
       <workItem from="1522162216776" duration="6377000" />
       <workItem from="1522261835605" duration="8000" />
-      <workItem from="1522608123215" duration="292000" />
+      <workItem from="1522608123215" duration="1852000" />
     </task>
     <servers />
   </component>
@@ -757,7 +754,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239460000" />
+    <option name="totallyTimeSpent" value="241020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,7 +787,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32981783" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.28639847" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" weight="0.34291187" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981783" />
       <window_info id="Persistence" order="1" sideWeight="0.3141123" side_tool="true" weight="0.18123667" />
@@ -1187,8 +1184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/platform/db/entity/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="374">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1209,7 +1206,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited />
+          <last-edited>SpringProject:Web exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1222,7 +1219,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Spring (SpringProject)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1262,7 +1259,6 @@
             <option name="proportions">
               <list>
                 <option value="0.24913494" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1282,7 +1278,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Hibernate 5.2.12-5.2.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
