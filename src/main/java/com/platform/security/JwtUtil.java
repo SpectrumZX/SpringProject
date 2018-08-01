@@ -16,16 +16,8 @@ public class JwtUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(JwtUtil.class);
 
-  //  @Value("${jwt.secret}")
     private String secret = "mySecret";
 
-    /**
-     * Tries to parse specified String as a JWT token. If successful, returns User object with username, id and role prefilled (extracted from token).
-     * If unsuccessful (token is invalid or not containing all required user properties), simply returns null.
-     *
-     * @param token the JWT token to parse
-     * @return the User object extracted from specified token or null if a token is invalid.
-     */
     public User parseToken(String token) {
         try {
             Claims body = Jwts.parser()
