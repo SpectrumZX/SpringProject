@@ -24,6 +24,6 @@ public class TokenHandler {
                 .setExpiration(new Date(now.getTime() + TimeUnit.MINUTES.toMillis(10L)))
                 .signWith(SignatureAlgorithm.HS512, "some-random-secret-key")
                 .compact();
-    }*/
-
+    }
+*/
 }

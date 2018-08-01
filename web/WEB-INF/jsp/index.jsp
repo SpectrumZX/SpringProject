@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
@@ -20,5 +19,8 @@
 
   <p/>
   <a href="./api/manage/users/">./api/manage/users/</a>
+  <p/>
+  <a href="./allusers">servlet</a>
+  <%! String txt = "111"; %>
   </body>
 </html>

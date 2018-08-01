@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/security"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:sec="http://www.springframework.org/schema/security"
+        xsi:schemaLocation="
+      http://www.springframework.org/schema/security
+      http://www.springframework.org/schema/security/spring-security-4.2.xsd
+      http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+   <global-method-security pre-post-annotations="enabled" />
+
+    <http pattern="/api/login" security="none"/>
+    <http pattern="/api/signup" security="none"/>
+
+    <http pattern="/api/manage/**" entry-point-ref="restAuthenticationEntryPoint" create-session="stateless">
+     <!--   <intercept-url pattern="/api/manage/**" access="ROLE_USER" />-->
+        <csrf disabled="true"/>
+        <custom-filter before="FORM_LOGIN_FILTER" ref="jwtAuthenticationFilter"/>
+    </http>
+
+    <beans:bean id="jwtAuthenticationFilter" class="com.platform.security.JwtAuthenticationFilter">
+        <beans:property name="authenticationManager" ref="authenticationManager" />
+        <beans:property name="authenticationSuccessHandler" ref="jwtAuthenticationSuccessHandler" />
+    </beans:bean>
+
+<beans:bean id="restAuthenticationEntryPoint" class="com.platform.security.RestAuthenticationEntryPoint"/>
+   <beans:bean id="jwtAuthenticationProvider" class="com.platform.security.JwtAuthenticationProvider"/>
+    <beans:bean id="jwtAuthenticationSuccessHandler" class="com.platform.security.JwtAuthenticationSuccessHandler"/>
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider ref="jwtAuthenticationProvider"/>
+    </authentication-manager>
+
+
+
+</beans:beans>
