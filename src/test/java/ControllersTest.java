@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @WebAppConfiguration
-@ContextConfiguration("classpath:ApiDispatcher-servlet.xml")
+@ContextConfiguration("classpath:/WEB-INF/ApiDispatcher-servlet.xml")
 public class ControllersTest {
 
     @Autowired
